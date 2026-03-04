@@ -9,10 +9,10 @@ class ProductController extends Controller
 {
     public function index()
     {
-        // Kuhaon ang products apil ang suppliers
+       
         $products = Product::with('suppliers')->get();
 
-        // I-pass sa view nga 'products.index'
+        
         return view('products.index', compact('products'));
     }
 

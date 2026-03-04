@@ -5,7 +5,7 @@
     <div class="col-md-6">
         <div class="card shadow-sm">
             <div class="card-header bg-white">
-                <h3 class="mb-0">📥 Add New Stock</h3>
+                <h3 class="mb-0">Add New Stock</h3>
             </div>
             <div class="card-body">
                 

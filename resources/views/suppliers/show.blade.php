@@ -14,7 +14,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <h2 class="card-title text-primary fw-bold mb-1">
-                            🏢 {{ $supplier->supplier_name }}
+                             {{ $supplier->supplier_name }}
                         </h2>
                         <span class="badge bg-secondary">Code: {{ $supplier->supplier_code ?? 'N/A' }}</span>
                     </div>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <h4 class="mb-3">📦 Delivery History</h4>
+        <h4 class="mb-3">Delivery History</h4>
 
         <div class="card shadow-sm p-3">
             <table class="table table-hover align-middle">

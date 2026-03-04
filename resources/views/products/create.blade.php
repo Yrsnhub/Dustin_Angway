@@ -5,7 +5,7 @@
     <div class="col-md-6">
         <div class="card shadow-sm">
             <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">✨ Create New Product</h4>
+                <h4 class="mb-0">Create New Product</h4>
             </div>
             <div class="card-body">
                 <form action="{{ route('products.store') }}" method="POST">

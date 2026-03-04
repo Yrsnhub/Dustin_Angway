@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>🚚 Supplier List</h1>
+        <h1>Supplier List</h1>
         <a href="{{ route('suppliers.create') }}" class="btn btn-success">
             + Add New Supplier
         </a>
@@ -26,10 +26,10 @@
                             {{ $supplier->supplier_name }}
                         </td>
                         <td>
-                            <span class="text-muted">✉️ {{ $supplier->contact_email }}</span>
+                            <span class="text-muted">{{ $supplier->contact_email }}</span>
                         </td>
                         <td>
-                            <span class="text-muted">📞 {{ $supplier->contact_number }}</span>
+                            <span class="text-muted">{{ $supplier->contact_number }}</span>
                         </td>
                         <td>
                             <a href="{{ route('suppliers.show', $supplier->id) }}" class="btn btn-sm btn-outline-primary">
