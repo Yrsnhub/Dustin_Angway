@@ -1,24 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\SupplierController;
-use App\Http\Controllers\StockEntryController;
 
 
-Route::redirect('/', '/products');
-
-
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-Route::get('/products/create', [ProductController::class, 'create'])->name('products.create'); 
-Route::post('/products', [ProductController::class, 'store'])->name('products.store');        
-
-
-
-Route::get('/suppliers', [SupplierController::class, 'index'])->name('suppliers.index');
-Route::get('/suppliers/create', [SupplierController::class, 'create'])->name('suppliers.create'); 
-Route::post('/suppliers', [SupplierController::class, 'store'])->name('suppliers.store');        
-Route::get('/suppliers/{id}', [SupplierController::class, 'show'])->name('suppliers.show');       
-
-Route::get('/stock-entries/create', [StockEntryController::class, 'create'])->name('stock.create');
-Route::post('/stock-entries', [StockEntryController::class, 'store'])->name('stock.store');
+Route::get('/', function () {
+    return view('welcome');
+});
